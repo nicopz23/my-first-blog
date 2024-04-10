@@ -15,10 +15,11 @@
 
 <body>
     <h1>Página actualizada</h1>
-    <h2>New Post</h2>
+    <div><h2>New Post</h2>
     {% if user.is_authenticated %}
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
+</div>
     <hr>
     <h2>Post List</h2>
     {% block content %}
